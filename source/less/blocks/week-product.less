@@ -1,0 +1,61 @@
+.week-product {
+  position: relative;
+
+  padding-bottom: 48px;
+
+  &::after {
+    .pseudo(@display: block, @pos: absolute, @content: "");
+    bottom: 7px;
+    width: 100%;
+    height: 6px;
+    background-repeat: repeat no-repeat;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+  }
+}
+
+.week-product__title {
+  margin-top: 28px;
+  margin-bottom: 5px;
+  .set-font-size(25px, 30px);
+  color: @black;
+}
+
+.week-product__subtitle {
+  margin-top: 0;
+  margin-bottom: 22px;
+  .set-font-size(17px, 20px);
+  .set-uppercase();
+  font-weight: 700;
+  color: @blue-primary;
+}
+
+.week-product__table {
+  margin-top: 18px;
+  margin-bottom: 27px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.week-product__table-cell {
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-right: 24px;
+  border-bottom: 1px solid @gray-border;
+}
+
+.week-product__price {
+  margin-bottom: 26px;
+  margin-top: 26px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.week-product__image {
+  display: block;
+  // margin: 0 auto;
+  width: 100%;
+  height: auto;
+}

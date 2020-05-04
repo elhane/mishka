@@ -1,0 +1,271 @@
+.order-form__wrapper {
+  margin-left: -12px;
+}
+
+.form__legend {
+  // position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  .set-font-size(17px, 16px);
+  font-weight: 700;
+  .set-uppercase();
+  color: @blue-primary;
+
+  &--customer {
+    margin-bottom: 23px;
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 7px;
+  }
+
+  // &::after {
+  //   .pseudo(@display: block, @pos: absolute, @content: "");
+  //   right: 0;
+  //   top: 8px;
+  //   width: 79%;
+  //   height: 1px;
+  //   background-color: @blue-primary;
+  // }
+}
+
+.form__legend-text {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-right: -10px;
+
+  &::after {
+    content: "";
+    display: block;
+    right: 0;
+    top: 8px;
+    width: 100%;
+    height: 1px;
+    background-color: @blue-primary;
+    margin-left: 25px;
+  }
+}
+
+.form__fieldset {
+  margin: 0;
+  border: none;
+
+  &--color {
+    margin-bottom: 2px;
+  }
+
+  &--type {
+    margin-bottom: 19px;
+  }
+
+  &--contacts {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.form__label {
+  position: relative;
+  .set-font-size(17px, 18px);
+  font-weight: 700;
+  color: @black;
+}
+
+.form__input-checkbox,
+.form__input-radio {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__label-checkbox {
+  padding-left: 63px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 27px;
+
+  // &:active {
+  //   opacity: 0.3;
+  // }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 3px;
+    z-index: 1;
+    width: 40px;
+    height: 39px;
+    border: 2px solid @gray-primary;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 21px;
+    height: 10px;
+    border: 2px solid @black;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+  }
+}
+
+.form__input-checkbox:checked + .form__label-checkbox::after {
+  display: block;
+}
+
+.form__label-radio {
+  display: block;
+  padding-left: 63px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  // padding-right: 15px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid @black;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 13px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: @blue-input;
+  }
+}
+
+.form__input-radio:checked + .form__label-radio::after {
+  display: block;
+}
+
+.form__row {
+  margin-bottom: 8px;
+
+  &--program {
+    margin-bottom: 9px;
+  }
+
+  &--color {
+    padding: 9px 0;
+    margin-bottom: 19px;
+  }
+
+  &--customer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+
+  &--contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  &--commentary {
+    margin-bottom: 0;
+  }
+}
+
+.form__input-field {
+  margin-right: -10px;
+  height: 52px;
+  border: none;
+  border-bottom: 2px solid @black;
+
+  &::placeholder {
+    .set-font-size(17px, 18px);
+    color: @gray-primary;
+    opacity: 0.3;
+  }
+
+  &--phone {
+    .set-font-size(19px, 18px);
+
+    &::placeholder {
+      .set-font-size(19px, 18px);
+      color: @gray-primary;
+      opacity: 0.3;
+    }
+  }
+}
+
+.form__textarea {
+  margin-right: -10px;
+  padding: 15px;
+  width: 105%; //пока только так
+  min-height: 142px;
+
+  border: 2px solid @gray-primary;
+  resize: none;
+
+  &::placeholder {
+    .set-font-size(17px, 18px);
+    color: @gray-primary;
+    opacity: 0.3;
+  }
+}
+
+.form__text {
+  margin-top: 0;
+  margin-right: -10px;
+  margin-bottom: 31px;
+  padding-left: 10px;
+  .set-font-size(14px, 16px);
+  color: @gray-primary;
+  text-align: left;
+}
+
+// .form__button {
+//   margin-left: 11px;
+//   margin-right: 5px;
+// }
+
+.form__input-email-phone,
+.form__input-email-icon {
+  position: absolute;
+  opacity: 0.3;
+}
+
+.form__input-email-phone {
+  top: 33px;
+  right: -3px;
+}
+
+.form__input-email-icon {
+  top: 33px;
+  right: -7px;
+}
