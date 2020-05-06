@@ -1,15 +1,65 @@
-.catalog-item {
-  margin-bottom: 29px;
-  min-height: 375px;
-  border: 1px solid @gray-border;
+.catalog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 38px;
+  }
 }
 
+.catalog-item {
+  margin: 0 10px 30px;
+  min-height: 375px;
+  width: 260px;
+  border: 1px solid @gray-border;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 52px;
+    min-height: 334px;
+    width: 670px;
+  }
+}
+
+.catalog-item__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+//класс на ссылке в которую обернут picture
+.catalog-item__link-image {
+  display: block;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+}
+
+//класс на img в теге picture
 .catalog-item__image {
+  display: block;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 .catalog-item__info-wrapper {
   padding: 22px 28px 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 7px;
+    width: 50%;
+    min-height: 334px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+  }
 }
 
 .catalog-item__link-title {
@@ -19,6 +69,10 @@
 .catalog-item__title {
   margin: 0;
   .set-font-size(17px, 24px);
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(20px, 24px);
+  }
 }
 
 .catalog-item__description {
@@ -26,6 +80,10 @@
   margin-bottom: 19px;
   .set-font-size(13px, 30px);
   color: @gray-primary;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(15px, 30px);
+  }
 }
 
 .catalog-item__price-wrapper {
@@ -34,6 +92,12 @@
   justify-content: space-between;
   padding: 21px 0;
   border-top: 1px solid @gray-border;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+    padding-left: 5px;
+    padding-right: 4px;
+  }
 }
 
 .catalog-item__price {
@@ -41,6 +105,10 @@
   .set-font-size(15px, 24px);
   color: @black;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(17px, 24px);
+  }
 }
 
 .catalog-item__button {

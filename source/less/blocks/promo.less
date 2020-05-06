@@ -1,28 +1,70 @@
 .promo {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  // flex-wrap: wrap;
+  // justify-content: center;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -19px;
-  background-color: #f9f9f9;
+  background-color: @gray-background;
   width: 100%;
   min-height: 487px;
   padding-top: 50px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-size: 487px auto;
+  }
 
-  // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  //   background-image: ("../img/hero-mobile@2x.jpg");
-  //   background-size: 320px auto;
-  // }
+  @media (min-width: @tablet-width) {
+    position: relative;
+    min-height: 687px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center -69px;
+
+    &::after {
+      .pseudo(@display: block, @pos: absolute, @content: "");
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 770px 24px;
+      background-repeat: repeat-x;
+      background-position: bottom;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1142px auto;
+    }
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .promo__title {
   padding: 0 30px;
+  margin-top: 19px;
   text-align: center;
   .set-font-size(27px, 30px);
   color: #010000;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 32px;
+    .set-font-size(43px, 50px);
+  }
 }
 
 .promo__category-list {
@@ -31,6 +73,10 @@
   flex-direction: column;
   align-self: flex-end;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .promo__category-item {
@@ -47,6 +93,14 @@
 
   &--toys {
     background-color: @blue-secondary;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 36px;
+    padding-bottom: -4px;
+    margin-bottom: 1px;
+    min-height: 131px;
+    width: 50%;
   }
 }
 
@@ -66,6 +120,11 @@
   .set-font-size(19px, 24px);
   max-width: 110px;
   margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(20px, 30px);
+    margin-top: 2px;
+  }
 }
 
 .promo__category-icon-accessory,
@@ -79,10 +138,20 @@
   .set-image-size(40px, 62px);
   right: 35px;
   top: 11px;
+
+  @media (min-width: @tablet-width) {
+    right: 37px;
+    top: 4px;
+  }
 }
 
 .promo__category-icon-toys {
   .set-image-size(60px, 60px);
   right: 27px;
   top: 8px;
+
+  @media (min-width: @tablet-width) {
+    right: 34px;
+    top: 6px;
+  }
 }

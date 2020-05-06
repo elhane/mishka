@@ -1,14 +1,30 @@
 .features {
   padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 35px;
+  }
 }
 
 .features__title {
   .set-font-size(25px, 30px);
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(43px, 50px);
+    margin-top: 48px;
+    margin-left: -4px;
+  }
 }
 
 .features__list {
   .list-reset();
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .features__list-item {
@@ -28,16 +44,37 @@
     padding-right: 5px;
   }
 
-  // &::after {
-  //   .pseudo(@display: block, @pos: absolute, @content: "");
-  //   left: 0;
-  //   top: 0;
-  // }
+  @media (min-width: @tablet-width) {
+    .set-font-size(20px, 22px);
+    width: 50%;
+    padding-bottom: 29px;
+    padding-top: 65px;
 
-  // &--flower::after {
-  //   background: url("../img/icon-feature-flower.svg");
-  //   .set-image-size (32px, 37px);
-  // }
+    &--flower {
+      padding-right: 103px;
+      order: 1;
+    }
+
+    &--thread {
+      order: 2;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
 }
 
 .features__list-item-icon {
@@ -48,30 +85,58 @@
   &--flower {
     top: 9px;
     left: 7px;
+
+    @media (min-width: @tablet-width) {
+      top: 13px;
+      left: 9px;
+    }
   }
 
   &--money {
     top: 10px;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      top: 13px;
+      left: 1px;
+    }
   }
 
   &--heart {
     top: 15px;
     left: 8px;
+
+    @media (min-width: @tablet-width) {
+      top: 17px;
+      left: 8px;
+    }
   }
 
   &--thread {
     top: 12px;
     left: 3px;
+
+    @media (min-width: @tablet-width) {
+      top: 16px;
+      left: 3px;
+    }
   }
 
   &--rocket {
     top: 13px;
     left: -5px;
+
+    @media (min-width: @tablet-width) {
+      top: 16px;
+    }
   }
 
   &--present {
     top: 11px;
     left: 3px;
+
+    @media (min-width: @tablet-width) {
+      top: 13px;
+    }
   }
 }

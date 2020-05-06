@@ -1,18 +1,28 @@
 .social {
   .list-reset();
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 187px;
-  padding: 27px 25px 20px 20px;
-  // border-bottom: 1px solid @gray-border;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 19px 0 20px 0;
 }
-
 // .social__item {
 //   padding: 5px;
 // }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 6px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+    margin-left: 10px;
+  }
 }

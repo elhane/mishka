@@ -24,8 +24,10 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка"></picture></a>
-            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+              <img lass="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Мишка">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
         <ul class="main-nav__list main-nav__list--first">
           <li class="main-nav__item">
@@ -34,31 +36,30 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-        <!-- </ul> -->
-
-          <!-- <ul class="main-nav__list main-nav__list-second"> -->
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--search" href="#">
-                <svg class="main-nav__link-icon" width="18" height="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-                </svg>
-                <span>Поиск по сайту</span>
-                <!-- <svg width="17" height="17">
-                  <use xlink:href="#icon-insta"></use>
-                </svg> -->
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--cart" href="#">
-                <svg class="main-nav__link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewbox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                  <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                </svg>
-                <span>Корзина: пока пуста</span>
-              </a>
-            </li>
-          </ul>
-
+        </ul>
         <ul class="main-nav__list main-nav__list--second">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="#">
+              <svg class="main-nav__link-icon" width="18" height="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+              </svg>
+              <span class="main-nav__link-text">Поиск по сайту</span>
+              <!-- <svg width="17" height="17">
+                <use xlink:href="#icon-insta"></use>
+              </svg> -->
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link main-nav__link--cart" href="#">
+              <svg class="main-nav__link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewbox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+              </svg>
+              <span>Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list main-nav__list--third">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
@@ -74,68 +75,73 @@
       <h1 class="visually-hidden">Мишка — интернет-магазин милых штук ручной работы для дома</h1>
 
       <section class="promo">
-        <h1 class="promo__title">Милые штуки ручной работы&nbsp;для дома</h1>
-        <div class="promo__category-list">
-          <div class="promo__category-item promo__category-item--accessory">
-            <a class="promo__category-link" href="#">
-              <h3 class="promo__category-title">Предметы интерьера</h3>
-              <svg class="promo__category-icon-accessory" width="40" height="62" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
-                <g>
-                  <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
-                  <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
-                  <path d="M-225.262-17.446h-11.732c0-1.244-1.015-2.229-2.3-2.229c-1.283,0-2.3,0.985-2.3,2.229h-11.737l-6.073,25.517 c0.794-0.461,1.589-0.992,2.632-0.992c1.359,0,2.243,0.818,2.924,1.375c0.682,0.557,1.162,0.849,1.447,0.849 c0.292,0.001,0.769-0.287,1.451-0.836c0.681-0.548,1.564-1.358,2.915-1.358c1.349,0,2.237,0.806,2.919,1.354 c0.684,0.549,1.161,0.84,1.451,0.84c0.146,0,0.338-0.073,0.58-0.214c0.242-0.141,0.53-0.353,0.872-0.626 c0.512-0.411,1.139-0.967,1.99-1.218c0.284-0.085,0.593-0.136,0.93-0.136c1.347,0,2.238,0.805,2.92,1.354 c0.683,0.548,1.159,0.84,1.451,0.84c0.287-0.002,0.766-0.296,1.445-0.85c0.684-0.554,1.571-1.367,2.925-1.367 c1.356,0,2.239,0.817,2.919,1.371c0.342,0.276,0.631,0.489,0.872,0.631c0.24,0.143,0.431,0.214,0.575,0.214 c0.288,0,0.762-0.293,1.442-0.854c0.68-0.559,1.567-1.384,2.929-1.384c1.044,0,1.839,0.533,2.632,0.997L-225.262-17.446z"/>
-                  <path d="M-235.881,33.82h-6.864c-0.657,0-1.15,0.479-1.15,1.115c0,0.635,0.493,1.113,1.15,1.113h6.9c0.655,0,1.15-0.479,1.15-1.113 c0-0.636-0.495-1.115-1.15-1.115H-235.881z"/>
-                  <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
-                </g>
-              </svg>
-            </a>
-          </div>
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Милые штуки ручной работы&nbsp;для дома</h1>
+          <div class="promo__category-list">
+            <div class="promo__category-item promo__category-item--accessory">
+              <a class="promo__category-link" href="#">
+                <h3 class="promo__category-title">Предметы интерьера</h3>
+                <svg class="promo__category-icon-accessory" width="40" height="62" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
+                  <g>
+                    <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
+                    <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
+                    <path d="M-225.262-17.446h-11.732c0-1.244-1.015-2.229-2.3-2.229c-1.283,0-2.3,0.985-2.3,2.229h-11.737l-6.073,25.517 c0.794-0.461,1.589-0.992,2.632-0.992c1.359,0,2.243,0.818,2.924,1.375c0.682,0.557,1.162,0.849,1.447,0.849 c0.292,0.001,0.769-0.287,1.451-0.836c0.681-0.548,1.564-1.358,2.915-1.358c1.349,0,2.237,0.806,2.919,1.354 c0.684,0.549,1.161,0.84,1.451,0.84c0.146,0,0.338-0.073,0.58-0.214c0.242-0.141,0.53-0.353,0.872-0.626 c0.512-0.411,1.139-0.967,1.99-1.218c0.284-0.085,0.593-0.136,0.93-0.136c1.347,0,2.238,0.805,2.92,1.354 c0.683,0.548,1.159,0.84,1.451,0.84c0.287-0.002,0.766-0.296,1.445-0.85c0.684-0.554,1.571-1.367,2.925-1.367 c1.356,0,2.239,0.817,2.919,1.371c0.342,0.276,0.631,0.489,0.872,0.631c0.24,0.143,0.431,0.214,0.575,0.214 c0.288,0,0.762-0.293,1.442-0.854c0.68-0.559,1.567-1.384,2.929-1.384c1.044,0,1.839,0.533,2.632,0.997L-225.262-17.446z"/>
+                    <path d="M-235.881,33.82h-6.864c-0.657,0-1.15,0.479-1.15,1.115c0,0.635,0.493,1.113,1.15,1.113h6.9c0.655,0,1.15-0.479,1.15-1.113 c0-0.636-0.495-1.115-1.15-1.115H-235.881z"/>
+                    <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
+                  </g>
+                </svg>
+              </a>
+            </div>
 
-          <div class="promo__category-item promo__category-item--toys">
-            <a class="promo__category-link" href="#">
-              <h3 class="promo__category-title">Детские игрушки</h3>
-              <svg class="promo__category-icon-toys" width="60" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
-                <path d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
-              </svg>
-            </a>
+            <div class="promo__category-item promo__category-item--toys">
+              <a class="promo__category-link" href="#">
+                <h3 class="promo__category-title">Детские игрушки</h3>
+                <svg class="promo__category-icon-toys" width="60" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
+                  <path d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="week-product">
         <div class="container">
-          <h2 class="week-product__title">Вязаные корзинки</h2>
-          <p class="week-product__subtitle">товар недели</p>
-          <p lass="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <div class="week-product__header">
+            <h2 class="week-product__title">Вязаные корзинки</h2>
+            <p class="week-product__subtitle">товар недели</p>
+          </div>
+          <div class="week-product__content-wrapper">
+            <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <table class="week-product__table">
+              <tr class="week-product__table-row">
+                <td class="week-product__table-cell">Цвет:</td>
+                <td class="week-product__table-cell">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="week-product__table-cell">Диаметр:</td>
+                <td class="week-product__table-cell">25 см</td>
+              </tr>
+              <tr>
+                <td class="week-product__table-cell">Высота:</td>
+                <td class="week-product__table-cell">15 см</td>
+              </tr>
+            </table>
 
-          <table class="week-product__table">
-            <tr class="week-product__table-row">
-              <td class="week-product__table-cell">Цвет:</td>
-              <td class="week-product__table-cell">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td class="week-product__table-cell">Диаметр:</td>
-              <td class="week-product__table-cell">25 см</td>
-            </tr>
-            <tr>
-              <td class="week-product__table-cell">Высота:</td>
-              <td class="week-product__table-cell">15 см</td>
-            </tr>
-          </table>
+            <div class="week-product__link-image">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x">
+                <source type="image/webp" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x"> -->
 
-          <a class="week-product__link-image" href="#">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x">
-              <source type="image/webp" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x"> -->
-
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/chicken-small-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
-            </picture>
-          </a>
-          <p class="week-product__price">Цена: 990 руб.</p>
-          <button class="week-product__button button">заказать</button>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/chicken-small-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
+              </picture>
+            </div>
+            <p class="week-product__price">Цена: 990 руб.</p>
+            <button class="week-product__button button">заказать</button>
+         </div>
         </div>
       </section>
 
@@ -202,7 +208,7 @@
       </section>
 
       <section class="reviews">
-        <div class="container">
+        <div class="container reviews__content-wrapper">
           <h2 class="reviews__title">Отзывы</h2>
 
           <blockquote class="reviews__content">
@@ -215,12 +221,12 @@
           </blockquote>
 
           <div class="reviews__controls">
-            <button class="reviews__controls-btn" type="button">
+            <button class="reviews__controls-btn reviews__controls-btn--prev" type="button">
               <svg class="reviews__controls-btn-prev" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="26" viewbox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
               </svg>
             </button>
-            <button class="reviews__controls-btn" type="button">
+            <button class="reviews__controls-btn reviews__controls-btn--next" type="button">
               <svg class="reviews__controls-btn-next" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="26.003" viewbox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
               </svg>
@@ -232,8 +238,22 @@
       </section>
 
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts__content-wrapper">
           <h2 class="contacts__title">Контакты</h2>
+          <svg class="contacts__icon-flag" width="47" height="81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.68px" height="81.691px" viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
+            <g id="miu">
+              <g id="Artboard-1" transform="translate(-755.000000, -443.000000)">
+                <g id="slice" transform="translate(215.000000, 119.000000)">
+                </g>
+                <g id="editor-flag-triangle-notification-glyph">
+                  <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+                </g>
+              </g>
+            </g>
+            <g>
+              <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
+            </g>
+          </svg>
           <ul class="contacts__list">
             <li class="contacts__item">
               <span class="contacts__type">e-mail:</span>
@@ -241,7 +261,7 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__type">адрес:</span>
-              <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</p>
+              <p class="contacts__text">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</p>
             </li>
           </ul>
         </div>
@@ -254,7 +274,8 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
+      <div class="page-footer__content-wrapper">
         <!-- <div class="page-footer__logo"> -->
         <a class="page-footer__logo-link" href="index.html">
           <svg class="page-footer__logo" width="102" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
@@ -329,6 +350,7 @@
           <svg class="copyright__logo" width="27" height="34" fill="#63d1bb" xmlns="http://www.w3.org/2000/svg"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
         </a>
       <!-- </div> -->
+      </div>
     </footer>
     <script src="js/menu.js"></script>
   </body>
