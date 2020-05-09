@@ -29,7 +29,7 @@
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
-        <ul class="main-nav__list main-nav__list--first">
+        <ul class="main-nav__list main-nav__list--site-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -37,7 +37,7 @@
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list main-nav__list--second">
+        <ul class="main-nav__list main-nav__list--user-nav">
           <li class="main-nav__item main-nav__item--search">
             <a class="main-nav__link main-nav__link--search" href="#">
               <svg class="main-nav__link-icon" width="18" height="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -59,12 +59,12 @@
           </li>
         </ul>
 
-        <ul class="main-nav__list main-nav__list--third">
+        <ul class="main-nav__list main-nav__list--store-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Новые поступления</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav_link" href="#">Распродажа</a>
+            <a class="main-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
@@ -134,14 +134,14 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x">
                 <source type="image/webp" srcset="img/_@1x.webp 1x, img/_@2x.webp 2x"> -->
 
-                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/chicken-small-desktop@2x.jpg 2x">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
                 <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
               </picture>
             </div>
             <p class="week-product__price">Цена: 990 руб.</p>
             <button class="week-product__button button">заказать</button>
-         </div>
+          </div>
         </div>
       </section>
 
@@ -213,7 +213,7 @@
 
           <blockquote class="reviews__content">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__autor">
               <span class="reviews__autor-name">Анастасия Красильникова</span>
               <a class="reviews__autor-link" href="#">@misssssiskras</a>
@@ -222,12 +222,12 @@
 
           <div class="reviews__controls">
             <button class="reviews__controls-btn reviews__controls-btn--prev" type="button">
-              <svg class="reviews__controls-btn-prev" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="26" viewbox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <svg class="reviews__controls-arrow-prev" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="26" viewbox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
               </svg>
             </button>
             <button class="reviews__controls-btn reviews__controls-btn--next" type="button">
-              <svg class="reviews__controls-btn-next" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="26.003" viewbox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <svg class="reviews__controls-arrow-next" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="26.003" viewbox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
               </svg>
             </button>
@@ -268,14 +268,14 @@
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.9750205566963!2d30.322076840808084!3d59.938765264719976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1586253181213!5m2!1sru!2sru" allowfullscreen="" frameborder="0" aria-hidden="false" tabindex="0" aria-label="Интерактивная карта"></iframe>
         </div>
-        <div class="container">
+        <div class="contacts__button-wrapper">
           <a class="contacts__button button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__content-wrapper">
+    <footer class="page-footer">
+      <div class="container page-footer__content-wrapper">
         <!-- <div class="page-footer__logo"> -->
         <a class="page-footer__logo-link" href="index.html">
           <svg class="page-footer__logo" width="102" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">

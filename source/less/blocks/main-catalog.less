@@ -27,6 +27,16 @@
       background-position: bottom;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 212px;
+    padding-top: 33px;
+
+    &::after {
+      height: 38px;
+      background-size: 1150px 34px;
+    }
+  }
 }
 
 .main-catalog__title {
@@ -38,6 +48,10 @@
   @media (min-width: @tablet-width) {
     .set-font-size(43px, 50px);
   }
+
+  @media (min-width: @desktop-width) {
+    .set-font-size(53px, 57px);
+  }
 }
 
 .main-catalog__list {
@@ -45,4 +59,3 @@
   // display: flex;
   // flex-direction: column;
 }
-

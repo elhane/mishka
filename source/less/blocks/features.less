@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 35px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 43px;
+  }
 }
 
 .features__title {
@@ -13,6 +17,13 @@
     .set-font-size(43px, 50px);
     margin-top: 48px;
     margin-left: -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 58px;
+    margin-left: 172px;
+    margin-bottom: 36px;
+    .set-font-size(52px, 57px); //53 не сходится с ПП
   }
 }
 
@@ -25,6 +36,11 @@
     // flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
 
 .features__list-item {
@@ -35,14 +51,6 @@
   .set-font-size(17px, 20px);
   font-weight: 700;
   color: @black;
-
-  &--flower {
-    padding-right: 65px;
-  }
-
-  &--rocket {
-    padding-right: 5px;
-  }
 
   @media (min-width: @tablet-width) {
     .set-font-size(20px, 22px);
@@ -75,6 +83,29 @@
       order: 6;
     }
   }
+
+  &--flower {
+    padding-right: 65px;
+
+    @media (min-width: @desktop-width) {
+      padding-right: 120px;
+    }
+  }
+
+  &--thread,
+  &--present {
+    @media (min-width: @desktop-width) {
+      padding-right: 70px;
+    }
+  }
+
+  &--rocket {
+    padding-right: 5px;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   padding-right: 0;
+  // }
 }
 
 .features__list-item-icon {

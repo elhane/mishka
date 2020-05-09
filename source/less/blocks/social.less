@@ -3,7 +3,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 19px 0 20px 0;
+  padding: 20px 0 20px 0;
+
+  // @media (min-width: @desktop-width) {
+  //   padding-top: 21px;
+  // }
 }
 // .social__item {
 //   padding: 5px;
@@ -24,5 +28,18 @@
     align-items: center;
     margin-right: 9px;
     margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 7px;
+    margin-left: 13px;
+  }
+}
+
+.copyright__logo {
+  margin-top: 3px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 5px;
   }
 }
