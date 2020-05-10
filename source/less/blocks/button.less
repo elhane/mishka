@@ -10,4 +10,15 @@
   color: @gray-primary;
   border: 2px solid @gray-primary;
   background-color: @white;
+  transition: 0.3s;
+
+  &:hover {
+    color: @white;
+    background-color: @gray-primary;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @gray-primary;
+  }
 }

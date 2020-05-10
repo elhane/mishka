@@ -52,14 +52,22 @@
   font-weight: 700;
   color: @black;
 
+  &--flower {
+    padding-right: 65px;
+  }
+
+  &--rocket {
+    padding-right: 5px;
+  }
+
   @media (min-width: @tablet-width) {
     .set-font-size(20px, 22px);
     width: 50%;
     padding-bottom: 29px;
-    padding-top: 65px;
+    padding-top: 66px;
 
     &--flower {
-      padding-right: 103px;
+      padding-right: 123px;
       order: 1;
     }
 
@@ -84,28 +92,14 @@
     }
   }
 
-  &--flower {
-    padding-right: 65px;
+  @media (min-width: @desktop-width) {
+    padding-bottom: 27px;
 
-    @media (min-width: @desktop-width) {
-      padding-right: 120px;
-    }
-  }
-
-  &--thread,
-  &--present {
-    @media (min-width: @desktop-width) {
+    &--thread,
+    &--present {
       padding-right: 70px;
     }
   }
-
-  &--rocket {
-    padding-right: 5px;
-  }
-
-  // @media (min-width: @desktop-width) {
-  //   padding-right: 0;
-  // }
 }
 
 .features__list-item-icon {
@@ -116,57 +110,55 @@
   &--flower {
     top: 9px;
     left: 7px;
-
-    @media (min-width: @tablet-width) {
-      top: 13px;
-      left: 9px;
-    }
   }
 
   &--money {
     top: 10px;
     left: 0;
-
-    @media (min-width: @tablet-width) {
-      top: 13px;
-      left: 1px;
-    }
   }
 
   &--heart {
     top: 15px;
     left: 8px;
-
-    @media (min-width: @tablet-width) {
-      top: 17px;
-      left: 8px;
-    }
   }
 
   &--thread {
     top: 12px;
     left: 3px;
 
-    @media (min-width: @tablet-width) {
-      top: 16px;
-      left: 3px;
-    }
   }
 
   &--rocket {
     top: 13px;
     left: -5px;
-
-    @media (min-width: @tablet-width) {
-      top: 16px;
-    }
   }
 
   &--present {
     top: 11px;
     left: 3px;
+  }
 
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &--money {
+      top: 13px;
+      left: 1px;
+    }
+
+    &--heart {
+      top: 17px;
+      left: 8px;
+    }
+
+    &--thread {
+      top: 16px;
+      left: 3px;
+    }
+
+    &--rocket {
+      top: 16px;
+    }
+
+    &--present {
       top: 13px;
     }
   }

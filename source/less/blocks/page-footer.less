@@ -4,6 +4,21 @@
   }
 
   width: 33%;
+
+  &:hover {
+    .page-footer__logo {
+      fill: @blue-secondary-hover;
+      transition: 0.3s;
+    }
+  }
+
+  &:active {
+    .page-footer__logo {
+      fill: @blue-secondary-hover;
+      transition: 0.3s;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer {
@@ -41,6 +56,7 @@
   width: 100%;
   padding-top: 19px;
   justify-content: center;
+  transition: 0.3s;
 
   @media (max-width: @mobile-width-only) {
     &::before {
@@ -64,6 +80,20 @@
   @media (min-width: @desktop-width) {
     margin-left: 11px;
     padding-bottom: 7px;
+  }
+
+  &:hover {
+    .copyright__logo {
+      fill: @blue-secondary-hover;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__logo {
+      fill: @blue-secondary-hover;
+    }
   }
 }
 
