@@ -15,30 +15,39 @@ navToggle.addEventListener('click', function() {
 });
 
 //modal
-var cartBtn = document.querySelectorAll('.catalog-item__button');
-var modal = document.querySelector(".modal-overlay");
+if (document.querySelector(".modal-overlay")) {
+  var cartBtn = document.querySelectorAll('.modal-button');
+  // var modalCart = document.querySelector(".modal-cart");
+  var modalOverlay = document.querySelector(".modal-overlay");
 
-
-for (var i = 0; i < cartBtn.length; i++) {
-  cartBtn[i].addEventListener('click', function(evt) {
-    if (modal.classList.contains('modal-overlay--closed')) {
-      evt.preventDefault();
-      modal.classList.remove('modal-overlay--closed');
-      modal.classList.add('modal-overlay--opened');
-    } else {
-      modal.classList.add('modal-overlay--closed');
-      modal.classList.remove('modal-overlay--opened');
-    }
-  });
-
-  window.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 27) {
-
-      if (modal.classList.contains("modal-overlay--opened")) {
+  for (var i = 0; i < cartBtn.length; i++) {
+    cartBtn[i].addEventListener('click', function(evt) {
+      if (modalOverlay.classList.contains('modal-overlay--closed')) {
         evt.preventDefault();
-        modal.classList.remove("modal-overlay--opened");
-        modal.classList.add('modal-overlay--closed');
+        modalOverlay.classList.remove('modal-overlay--closed');
+        modalOverlay.classList.add('modal-overlay--opened');
+      } else {
+        modalOverlay.classList.add('modal-overlay--closed');
+        modalOverlay.classList.remove('modal-overlay--opened');
       }
-    }
-  });
+    });
+
+    window.addEventListener("click", function (evt) {
+      if (evt.target === modalOverlay) {
+        modalOverlay.classList.remove("modal-overlay--opened");
+        modalOverlay.classList.add('modal-overlay--closed');
+      }
+    });
+
+    window.addEventListener("keydown", function(evt) {
+      if (evt.keyCode === 27) {
+
+        if (modalOverlay.classList.contains("modal-overlay--opened")) {
+          evt.preventDefault();
+          modalOverlay.classList.remove("modal-overlay--opened");
+          modalOverlay.classList.add('modal-overlay--closed');
+        }
+      }
+    });
+  }
 }

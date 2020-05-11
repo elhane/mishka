@@ -1,16 +1,16 @@
 .week-product {
   position: relative;
-
-  padding-bottom: 48px;
+  padding-bottom: 42px;
 
   &::after {
     .pseudo(@display: block, @pos: absolute, @content: "");
-    bottom: 7px;
-    width: 100%;
+    bottom: 0;
     height: 6px;
-    background-repeat: repeat no-repeat;
+    width: 100%;
+    background-repeat: repeat-x;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
+    background-size: 320px 6px;
+    background-position-x: 8px;
   }
 
   @media (min-width: @tablet-width) {
@@ -19,24 +19,22 @@
     min-height: 613px;
 
     &::after {
-      bottom: 0;
       height: 17px;
       background-position-x: -20px;
       background-size: 768px 17px;
-      background-repeat: repeat-x;
     }
+  }
 
-    @media (min-width: @desktop-width) {
-      padding-top: 105px;
-      padding-bottom: 98px;
+  @media (min-width: @desktop-width) {
+    padding-top: 105px;
+    padding-bottom: 98px;
 
-      &::after {
-        left: calc(50% - 525px);
-        height: 25px;
-        width: 1050px;
-        background-position-x: 26px;
-        background-size: 1050px 23px;
-      }
+    &::after {
+      left: calc(50% - 525px);
+      height: 25px;
+      width: 1050px;
+      background-position-x: 26px;
+      background-size: 1050px 23px;
     }
   }
 }
@@ -69,8 +67,7 @@
   @media (min-width: @tablet-width) {
     display: inline-block;
     margin: 0;
-    // margin-top: 31px;
-    // margin-left: -3px;
+    padding-right: 40px;
     .set-font-size(43px, 50px);
   }
 
@@ -89,12 +86,9 @@
   color: @blue-primary;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     max-width: 100px;
     text-align: center;
-    margin-top: 7px;
-    margin-bottom: 6px;
-    margin-right: 13px;
+    margin: 12px 13px 6px 0;
     line-height: 17px;
   }
 
@@ -132,8 +126,8 @@
 }
 
 .week-product__table {
-  margin-top: 18px;
-  margin-bottom: 27px;
+  margin-top: 17px;
+  margin-bottom: 30px;
   width: 100%;
   border-collapse: collapse;
 
@@ -161,7 +155,7 @@
 
 .week-product__price {
   margin-bottom: 26px;
-  margin-top: 26px;
+  margin-top: 23px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

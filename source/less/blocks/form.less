@@ -238,13 +238,10 @@
     @media (max-width: @mobile-width-only) {
       max-width: 200px;
     }
-
-    // @media (min-width: @tablet-width) {
-    //   max-width: none;
-    // }
   }
 
   &--checkbox {
+    display: block; //при переполнении
     padding-left: 63px;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -271,7 +268,6 @@
       border-top-style: none;
       border-right-style: none;
       transform: rotate(-45deg);
-
       animation: opacityToggle 0.4s;
     }
 
@@ -290,21 +286,24 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding-bottom: 15px;
-      padding-top: 16px;
+      // padding-bottom: 15px;
+      // padding-top: 16px;
+      // padding-left: 81px;
+      padding-bottom: 25px; //GG
+      padding-top: 25px; //GG
       padding-left: 81px;
       .set-font-size(19px, 18px);
 
       &::before {
         left: 0;
-        top: 5px;
+        top: 11px;
         width: 54px;
         height: 52px;
       }
 
       &::after {
         left: 12px;
-        top: 17px;
+        top: 22px;
         width: 31px;
         height: 18px;
       }
@@ -357,9 +356,11 @@
     margin-bottom: 19px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      margin-bottom: 20px;
+      // padding-top: 16px;
+      // padding-bottom: 16px;
+      // margin-bottom: 20px;
+      margin-bottom: 8px; //ПП
+      padding: 0; //GG
       width: 48%;
     }
 
@@ -399,6 +400,7 @@
 
 .form__input-field {
   margin-right: -10px;
+  padding-right: 20px;
   height: 52px;
   width: 100%;
   border: none;
@@ -412,25 +414,28 @@
   }
 
   &--phone {
+    padding-right: 50px;
     .set-font-size(19px, 18px);
-
-    @media (min-width: @tablet-width) {
-      background-color: @gray-secondary;
-    }
   }
 
   &--email {
-    @media (min-width: @tablet-width) {
-      background-color: @gray-secondary;
-    }
+    padding-right: 50px;
   }
+
 
   @media (min-width: @tablet-width) {
     margin-right: 0;
     padding-left: 17px;
+    padding-right: 30px;
     width: 100%;
     height: 54px;
     .set-font-size(19px, 18px);
+
+    &--phone,
+    &--email {
+      padding-right: 70px;
+      background-color: @gray-secondary;
+    }
   }
 
   &:hover {
@@ -488,6 +493,8 @@
     order: 1;
     margin-top: 0;
     margin-bottom: 4px;
+    max-width: 50%;
+    text-align: right;
     .set-font-size(17px, 30px);
   }
 }
@@ -568,8 +575,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding-top: 46px;
-      padding-bottom: 29px;
+      // padding-top: 46px;
+      padding-top: 39px; //ПП
+      padding-bottom: 36px;
     }
 
     @media (min-width: @desktop-width) {

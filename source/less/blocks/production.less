@@ -47,7 +47,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 0;
+    top: calc(50% - 228px);
     left: 0;
   }
 }
@@ -79,12 +79,14 @@
 
 .production__title {
   padding-left: 25px;
+  width: 80%;
   .set-font-size(17px, 24px);
   color: @black;
 
   @media (min-width: @tablet-width) {
     margin-top: 17px;
     padding-left: 33px;
+    width: 90%;
     .set-font-size(20px, 24px);
   }
 
