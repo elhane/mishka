@@ -84,6 +84,17 @@
     }
 
     .main-nav__link--search {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+      }
+
       @media (min-width: @tablet-width) {
         display: block;
         padding: 45px 0 44px 82px;
@@ -91,6 +102,18 @@
     }
 
     .main-nav__link--cart {
+      //IE
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+      }
+
       @media (min-width: @tablet-width) {
         display: block;
         padding: 32px 50px 32px 85px;
@@ -230,7 +253,7 @@
     padding-right: 50px;
     margin-top: 18px;
     margin-left: auto;
-    max-width: 45%;
+    max-width: 40%;
     order: 4;
     text-align: right;
   }
@@ -280,7 +303,17 @@
 }
 
 .main-nav__logo {
+  position: relative;
   transition: 0.3s;
+
+  &::before {
+    .pseudo(@display: block, @pos: absolute, @content: "");
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
 
   &:hover {
     opacity: 0.6;

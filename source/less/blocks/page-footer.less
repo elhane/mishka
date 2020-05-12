@@ -3,7 +3,17 @@
     display: none;
   }
 
+  position: relative;
   width: 33%;
+
+  &::before {
+    .pseudo(@display: block, @pos: absolute, @content: "");
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
 
   &:hover {
     .page-footer__logo {
@@ -59,8 +69,17 @@
   justify-content: center;
   transition: 0.3s;
 
+  &::before {
+    .pseudo(@display: block, @pos: absolute, @content: "");
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+
   @media (max-width: @mobile-width-only) {
-    &::before {
+    &::after {
       .pseudo(@display: block, @pos: absolute, @content: "");
       top: 0;
       width: 100%;
@@ -96,7 +115,3 @@
     }
   }
 }
-
-// .copyright__text {
-//   // padding-right: 22px;
-// }

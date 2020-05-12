@@ -16,9 +16,10 @@
   .set-font-size(25px, 30px);
 
   @media (min-width: @tablet-width) {
-    .set-font-size(43px, 50px);
     margin-top: 48px;
+    margin-bottom: 37px;
     margin-left: -4px;
+    .set-font-size(43px, 50px);
   }
 
   @media (min-width: @desktop-width) {
@@ -140,6 +141,10 @@
   }
 
   @media (min-width: @tablet-width) {
+    &--flower {
+      top: 14px;
+    }
+
     &--money {
       top: 13px;
       left: 1px;
@@ -147,7 +152,6 @@
 
     &--heart {
       top: 17px;
-      left: 8px;
     }
 
     &--thread {

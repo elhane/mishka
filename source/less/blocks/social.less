@@ -14,6 +14,7 @@
 // }
 
 .social__link {
+  position: relative; // IE
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +22,16 @@
   margin-left: 6px;
   width: 40px;
   height: 40px;
+
+  //IE
+  &::before {
+    .pseudo(@display: block, @pos: absolute, @content: "");
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;

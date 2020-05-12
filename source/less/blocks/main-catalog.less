@@ -14,7 +14,8 @@
   @media (min-width: @tablet-width) {
     position: relative;
     min-height: 164px;
-    padding-top: 24px;
+    padding-top: 35px;
+    padding-bottom: 92px;
 
     &::after {
       .pseudo(@display: block, @pos: absolute, @content: "");
@@ -44,9 +45,10 @@
   .set-font-size(27px, 30px);
   color: @black;
   text-align: center;
-  max-width: 70%;
+  max-width: 80%;
 
   @media (min-width: @tablet-width) {
+    max-width: 70%;
     .set-font-size(43px, 50px);
   }
 
