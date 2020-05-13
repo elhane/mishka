@@ -14,7 +14,6 @@
 .production__content-wrapper {
   border: 1px solid @gray-border;
 
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -54,11 +53,7 @@
   }
 }
 
-
 .production__header {
-  // position: relative;
-  // padding-left: 90px;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -102,20 +97,16 @@
 }
 
 .production__icon-camera {
-  // position: absolute;
-  // left: calc(50% - 16px);
-  // top: calc(50% - 11px);
-  .set-font-size(17px, 24px);
-  color: @black;
+  display: block;
   width: 36px;
   height: 35px;
-  display: block;
+  .set-font-size(17px, 24px);
+  color: @black;
 
   @media (min-width: @tablet-width) {
     width: 33px;
   }
 }
-
 
 .production__info {
   padding: 9px 33px 32px;
@@ -151,9 +142,6 @@
   position: absolute;
   left: calc(50% - 51px);
   top: calc(50% - 39px);
-  // left: 50%;
-  // top: 50%;
-  // transform: translate(-50%, -50%);
   padding: 0;
   width: 102px;
   height: 78px;

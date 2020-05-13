@@ -12,11 +12,6 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
-  // position: absolute;
-  // opacity: 1;
-  // left: 0;
-  // top: 0;
 }
 
 .form-cart__sizes {
@@ -39,7 +34,6 @@
   color: @gray-primary;
   background-color: @white;
   border: 2px solid rgba(68, 68, 68, 0.1);
-  // box-shadow: inset 0 0 0 2px rgba(68, 68, 68, 0.1);
   transition: 0.2s;
   cursor: pointer;
 
@@ -52,20 +46,21 @@
   }
 
   &:focus {
-    // outline: 2px dashed @gray-border;
     outline-offset: 2px;
   }
 }
 
 .form-cart__input:checked + .form-cart__label {
   border-color: @blue-primary;
-  // box-shadow: inset 0 0 0 2px @blue-primary;
   transition: 0.2s;
+}
+
+.form-cart__input:disabled + .form-cart__label {
+  opacity: 0.4;
 }
 
 .form-cart__btn {
   margin-top: 30px;
-  // width: 350px;
   width: 100%;
   min-height: 52px;
 

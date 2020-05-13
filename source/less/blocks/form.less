@@ -204,13 +204,13 @@
       animation: opacityToggle 0.4s;
     }
 
-    &:hover:enabled {
+    &:hover {
       &::before {
         border-color: @blue-input;
       }
     }
 
-    &:active:enabled {
+    &:active {
       &::before {
         border-color: @gray-primary;
         opacity: 0.3;
@@ -272,13 +272,13 @@
       animation: opacityToggle 0.4s;
     }
 
-    &:hover:enabled {
+    &:hover {
       &::before {
         border-color: @blue-input;
       }
     }
 
-    &:active:enabled {
+    &:active {
       &::before {
         border-color: @gray-primary;
         opacity: 0.3;
@@ -348,12 +348,17 @@
   display: block;
 }
 
-.form__input-checkbox:disabled + .form__label--checkbox {
-  opacity: 0.4;
+.form__input-checkbox:disabled + .form__label--checkbox,
+.form__input-radio:disabled + .form__label--radio {
+  opacity: 0.3;
 }
 
-.form__input-radio:disabled + .form__label--radio {
-  opacity: 0.4;
+.form__input-radio:disabled:hover + .form__label--radio::before,
+.form__input-radio:disabled:active + .form__label--radio::before,
+.form__input-checkbox:disabled:hover + .form__label--checkbox::before,
+.form__input-checkbox:disabled:active + .form__label--checkbox::before {
+  border-color: @gray-primary;
+  opacity: 1;
 }
 
 .form__row {
@@ -364,16 +369,11 @@
   }
 
   &--color {
-    // padding-top: 8px;
-    // padding-bottom: 10px;
     margin-bottom: 19px;
 
     @media (min-width: @tablet-width) {
-      // padding-top: 16px;
-      // padding-bottom: 16px;
-      // margin-bottom: 20px;
-      margin-bottom: 8px; //ПП
-      padding: 0; //GG
+      margin-bottom: 8px;
+      padding: 0;
       width: 48%;
     }
 
@@ -594,8 +594,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;//
-      // padding-top: 46px;
-      padding-top: 39px; //ПП
+      padding-top: 39px;
       padding-bottom: 36px;
     }
 

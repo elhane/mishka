@@ -65,7 +65,7 @@
         .pseudo(@display: block, @pos: absolute, @content: "");
         top: 0;
         left: 500px;
-        width: calc(50vw - 575px); //половина ширины окна минус ширина списка
+        width: calc(50vw - 575px); //середина окна минус половина от 1150px
         height: 100%;
         background-color: @white;
         box-shadow: 0 1px 0 0 @gray-border;
@@ -195,7 +195,6 @@
   padding: 25px 20px 29px 74px;
 
   @media (max-width: @mobile-width-only) {
-    // margin-top: 0;
     border: 1px solid @gray-border;
   }
 }

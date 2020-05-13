@@ -1,9 +1,3 @@
-// .main-catalog {
-//   @media (min-width: @tablet-width) {
-//     margin-bottom: 50px;
-//   }
-// }
-
 .main-catalog__header {
   min-height: 150px;
   margin-bottom: 30px;
@@ -42,10 +36,10 @@
 
 .main-catalog__title {
   margin: 0 auto;
+  max-width: 80%;
   .set-font-size(27px, 30px);
   color: @black;
   text-align: center;
-  max-width: 80%;
 
   @media (min-width: @tablet-width) {
     max-width: 70%;
@@ -59,6 +53,4 @@
 
 .main-catalog__list {
   .list-reset();
-  // display: flex;
-  // flex-direction: column;
 }
