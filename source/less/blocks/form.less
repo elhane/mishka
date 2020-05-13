@@ -63,7 +63,6 @@
     white-space: nowrap;
 
     &::after {
-      // .pseudo(@display: block, @pos: absolute, @content: "");
       display: block;
       content: "";
       right: 0;
@@ -205,13 +204,13 @@
       animation: opacityToggle 0.4s;
     }
 
-    &:hover {
+    &:hover:enabled {
       &::before {
         border-color: @blue-input;
       }
     }
 
-    &:active {
+    &:active:enabled {
       &::before {
         border-color: @gray-primary;
         opacity: 0.3;
@@ -246,12 +245,7 @@
   }
 
   &--checkbox {
-    display: block; //при переполнении
-    // padding-left: 63px;
-    // padding-top: 13px;
-    // padding-bottom: 13px;
-    // padding-right: 27px;
-
+    display: block;
     padding: 12px 27px 12px 63px;
 
     &::before {
@@ -278,13 +272,13 @@
       animation: opacityToggle 0.4s;
     }
 
-    &:hover {
+    &:hover:enabled {
       &::before {
         border-color: @blue-input;
       }
     }
 
-    &:active {
+    &:active:enabled {
       &::before {
         border-color: @gray-primary;
         opacity: 0.3;
@@ -292,11 +286,8 @@
     }
 
     @media (min-width: @tablet-width) {
-      // padding-bottom: 15px;
-      // padding-top: 16px;
-      // padding-left: 81px;
-      padding-bottom: 25px; //GG
-      padding-top: 25px; //GG
+      padding-bottom: 25px;
+      padding-top: 25px;
       padding-left: 81px;
       .set-font-size(19px, 18px);
 
@@ -341,12 +332,28 @@
   overflow: hidden;
 }
 
+.form__input-checkbox:disabled + .form__label-checkbox {
+  opacity: 0.3;
+}
+
+.form__input-radio:disabled + .form__label-radio {
+  opacity: 0.3;
+}
+
 .form__input-checkbox:checked + .form__label--checkbox::after {
   display: block;
 }
 
 .form__input-radio:checked + .form__label--radio::after {
   display: block;
+}
+
+.form__input-checkbox:disabled + .form__label--checkbox {
+  opacity: 0.4;
+}
+
+.form__input-radio:disabled + .form__label--radio {
+  opacity: 0.4;
 }
 
 .form__row {
