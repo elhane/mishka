@@ -1,0 +1,239 @@
+.reviews {
+  position: relative;
+  padding-bottom: 53px;
+
+  &::after {
+    .pseudo(@display: block, @pos: absolute, @content: "");
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 6px;
+    background-position-x: 8px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 541px;
+
+    &::after {
+      height: 17px;
+      background-position-x: -20px;
+      background-size: 768px 17px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 93px;
+
+    &::after {
+      left: calc(50% - 525px);
+      height: 25px;
+      width: 1050px;
+      background-position-x: 26px;
+      background-size: 1050px 23px;
+    }
+  }
+}
+
+.reviews__title {
+  margin-bottom: 25px;
+  .set-font-size(25px, 30px);
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -4px;
+    .set-font-size(43px, 50px);
+    max-width: 610px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 28px;
+    .set-font-size(53px, 57px);
+    max-width: 670px;
+  }
+}
+
+.reviews__content-wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 41px;
+    padding-bottom: 46px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: flex-start;
+    padding-left: 226px;
+    padding-bottom: 92px;
+    padding-top: 44px;
+    min-height: 457px;
+    background-position-x: 50px;
+  }
+}
+
+.reviews__content {
+  margin: 0;
+  .set-font-size(15px, 30px);
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 50px;
+  }
+}
+
+.reviews__text {
+  margin-bottom: 27px;
+  color: @gray-primary;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 57px;
+    padding-right: 24px;
+    .set-font-size(17px, 30px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.reviews__autor {
+  display: flex;
+  flex-direction: column;
+  .set-font-size(17px, 24px);
+  font-weight: 700;
+  font-style: inherit;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+    max-width: 40%;
+  }
+}
+
+.reviews__autor-name {
+  margin-bottom: 6px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 4px;
+    .set-font-size(18px, 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .set-font-size(17px, 24px);
+  }
+}
+
+.reviews__autor-link {
+  color: @gray-primary;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(17px, 30px);
+  }
+
+  &:hover {
+    color: @blue-secondary-hover;
+  }
+
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 2px;
+  }
+
+
+  &:active {
+    color: @blue-secondary-hover;
+    opacity: 0.3;
+  }
+}
+
+.reviews__controls {
+  display: flex;
+  flex-wrap: nowrap;
+
+  margin-top: 32px;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    bottom: 49px;
+    right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 95px;
+  }
+}
+
+.reviews__controls-btn {
+  position: relative;
+  padding: 0;
+  width: 50%;
+  height: 52px;
+  border: 1px solid @gray-border;
+  background-color: @white;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 3px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &--next {
+      margin-left: -1px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 88px;
+    border: none;
+  }
+}
+
+.reviews__controls-arrow {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: 11px;
+}
+
+.reviews__button {
+  .set-font-size(18px, 20px);
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    min-height: 30px;
+    order: 0;
+    margin-left: auto;
+    margin-top: 16px;
+    .set-font-size(17px, 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 38px;
+  }
+}

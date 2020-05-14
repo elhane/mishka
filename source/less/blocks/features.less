@@ -1,0 +1,170 @@
+.features {
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 43px;
+  }
+}
+
+.features__title {
+  margin-top: 27px;
+  margin-left: -1px;
+  .set-font-size(25px, 30px);
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 49px;
+    margin-bottom: 37px;
+    margin-left: -4px;
+    .set-font-size(43px, 50px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 58px;
+    margin-left: 169px;
+    margin-bottom: 36px;
+    .set-font-size(53px, 57px);
+  }
+}
+
+.features__list {
+  .list-reset();
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
+
+.features__list-item {
+  position: relative;
+  margin-bottom: 18px;
+  padding-top: 65px;
+  padding-right: 40px;
+  .set-font-size(17px, 20px);
+  font-weight: 700;
+  color: @black;
+
+  &--flower {
+    padding-right: 65px;
+  }
+
+  &--rocket {
+    padding-right: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    .set-font-size(20px, 22px);
+    width: 50%;
+    padding-bottom: 29px;
+    padding-top: 66px;
+
+    &--flower {
+      padding-right: 123px;
+      order: 1;
+    }
+
+    &--thread {
+      order: 2;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 27px;
+
+    &--thread,
+    &--present {
+      padding-right: 70px;
+    }
+  }
+}
+
+.features__list-item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--flower {
+    top: 9px;
+    left: 7px;
+  }
+
+  &--money {
+    top: 10px;
+    left: 0;
+  }
+
+  &--heart {
+    top: 15px;
+    left: 8px;
+  }
+
+  &--thread {
+    top: 12px;
+    left: 3px;
+  }
+
+  &--rocket {
+    top: 13px;
+    left: -5px;
+  }
+
+  &--present {
+    top: 11px;
+    left: 3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--flower {
+      top: 13px;
+    }
+
+    &--money {
+      top: 13px;
+      left: 1px;
+    }
+
+    &--heart {
+      top: 17px;
+    }
+
+    &--thread {
+      top: 16px;
+      left: 3px;
+    }
+
+    &--rocket {
+      top: 16px;
+    }
+
+    &--present {
+      top: 13px;
+    }
+  }
+}

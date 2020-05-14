@@ -1,0 +1,41 @@
+.copyright__link {
+  display: flex;
+}
+
+.copyright__text {
+  padding-right: 30px;
+  .set-font-size(19px, 25px);
+  font-weight: 700;
+  color: @black;
+  max-width: 70%;
+}
+
+.copyright__logo {
+  margin-top: 3px;
+  transition: 0.3s;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 5px;
+  }
+}
+
+.copyright {
+  &:hover {
+    .copyright__logo {
+      fill: @blue-secondary-hover;
+    }
+  }
+
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__logo {
+      fill: @blue-secondary-hover;
+    }
+  }
+}
