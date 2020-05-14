@@ -21,11 +21,10 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
     padding-left: 682px;
-    min-height: 457px;
+    min-height: 456px;
   }
 
   &:hover {
@@ -39,8 +38,6 @@
 
 .production__content {
   position: relative;
-  height: 100%;
-  background-color: @gray-border;
 
   @media (min-width: @tablet-width) {
     order: 0;
@@ -57,31 +54,32 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 11px;
-  padding-bottom: 10px;
-  padding-left: 34px;
+  padding-top: 22px;
+  padding-bottom: 27px;
+  padding-left: 33px;
 
   @media (min-width: @tablet-width) {
     order: 1;
     padding-left: 41px;
-    padding-top: 16px;
+    padding-top: 33px;
   }
 
   @media (min-width: @desktop-width) {
     flex-wrap: wrap;
     padding-left: 78px;
     padding-top: 41px;
+    padding-bottom: 34px;
   }
 }
 
 .production__title {
+  margin: 0;
   padding-left: 25px;
   width: 80%;
   .set-font-size(17px, 24px);
   color: @black;
 
   @media (min-width: @tablet-width) {
-    margin-top: 17px;
     padding-left: 33px;
     width: 90%;
     .set-font-size(20px, 24px);
@@ -98,10 +96,8 @@
 
 .production__icon-camera {
   display: block;
-  width: 36px;
-  height: 35px;
-  .set-font-size(17px, 24px);
-  color: @black;
+  width: 32px;
+  height: 32px;
 
   @media (min-width: @tablet-width) {
     width: 33px;
@@ -124,17 +120,18 @@
 
 .production__text {
   margin-bottom: 25px;
+  margin-top: 18px;
   .set-font-size(13px, 24px);
 
   @media (min-width: @tablet-width) {
-    margin-top: 6px;
+    margin-top: 2px;
     margin-bottom: 36px;
     .set-font-size(15px, 30px);
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 47px;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 46px;
   }
 }
 
@@ -151,6 +148,11 @@
 
   &:hover {
     transform: scale(1.2);
+  }
+
+  &:focus {
+    outline: dashed 2px @white;
+    outline-offset: 3px;
   }
 
   &:active {

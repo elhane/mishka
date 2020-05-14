@@ -66,6 +66,11 @@
     padding-bottom: 46px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -103,7 +108,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 38px;
+    margin-bottom: 39px;
   }
 }
 
@@ -146,6 +151,12 @@
     color: @blue-secondary-hover;
   }
 
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 2px;
+  }
+
+
   &:active {
     color: @blue-secondary-hover;
     opacity: 0.3;
@@ -162,7 +173,6 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     margin: 0;
-    // top: 316px;
     bottom: 49px;
     right: 50px;
   }
@@ -182,6 +192,11 @@
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 3px;
   }
 
   &:active {

@@ -3,7 +3,6 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    min-height: 697px;
 
     &::after {
       .pseudo(@display: block, @pos: absolute, @content: "");
@@ -19,11 +18,10 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    min-height: 704px;
 
     &::after {
       height: 38px;
-      background-size: 1250px 37px;
+      background-size: 1250px 35px;
     }
   }
 }
@@ -45,7 +43,7 @@
     padding-left: 50px;
     padding-right: 50px;
     max-width: 1150px;
-    min-height: 695px;
+    // min-height: 695px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center calc(100% - 8px);
@@ -59,7 +57,7 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: center calc(100% - 15px);
+    background-position: center calc(100% - 18px);
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -69,21 +67,25 @@
 }
 
 .promo__title {
+  margin: 0 auto;
   margin-top: 19px;
-  margin-bottom: 0;
-  padding: 0 30px 123px 30px;
+  padding: 0 0 123px 0;
+  max-width: 270px;
   text-align: center;
   .set-font-size(27px, 30px);
   color: #010000;
 
   @media (min-width: @tablet-width) {
-    padding: 0 60px 374px; //
+    padding: 0 0 374px;
+    margin: 0 auto;
     margin-top: 43px;
+    max-width: 760px;
     .set-font-size(43px, 50px);
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 359px;
+    max-width: none;
+    padding-bottom: 360px;
     padding-right: 80px;
     padding-left: 80px;
     .set-font-size(53px, 57px);
@@ -94,11 +96,9 @@
   .list-reset();
   display: flex;
   flex-direction: column;
-  // align-self: flex-end;
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    // margin-top: auto;
     flex-direction: row;
   }
 }
@@ -133,6 +133,12 @@
 
   color: @white;
   font-weight: 700;
+
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 2px;
+  }
+
 
   &::before {
     .pseudo(@display: block, @pos: absolute, @content: "");

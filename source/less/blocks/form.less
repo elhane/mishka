@@ -1,22 +1,3 @@
-@keyframes opacityToggle {
-  0% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0.3;
-  }
-
-
-  60% {
-    opacity: 0.7;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .form__legend {
   margin-bottom: 25px;
   width: 100%;
@@ -115,7 +96,11 @@
   }
 
   &--commentary {
+    display: inline-block;
+    margin-bottom: 23px;
+
     @media (min-width: @tablet-width) {
+      margin-bottom: 0;
       position: absolute;
       left: 51px;
       max-width: 100px;
@@ -183,7 +168,7 @@
 
     &::before {
       .pseudo(@display: block, @pos: absolute, @content: "");
-      left: 1px;
+      left: 0;
       top: 0;
       z-index: 1;
       width: 40px;
@@ -200,7 +185,6 @@
       height: 16px;
       border-radius: 50%;
       background-color: @blue-input;
-
       animation: opacityToggle 0.4s;
     }
 
@@ -208,6 +192,10 @@
       &::before {
         border-color: @blue-input;
       }
+    }
+
+    &:focus {
+      outline: none;
     }
 
     &:active {
@@ -230,7 +218,7 @@
       }
 
       &::after {
-        left: 17px;
+        left: 16px;
         top: 24px;
         width: 21px;
         height: 21px;
@@ -256,7 +244,6 @@
       width: 40px;
       height: 39px;
       border: 2px solid @gray-primary;
-      transition: 0.3s;
     }
 
     &::after {
@@ -278,6 +265,10 @@
       }
     }
 
+    &:focus {
+      outline: none;
+    }
+
     &:active {
       &::before {
         border-color: @gray-primary;
@@ -286,10 +277,10 @@
     }
 
     @media (min-width: @tablet-width) {
-      padding-bottom: 25px;
-      padding-top: 25px;
+      padding-bottom: 21px;
+      padding-top: 23px;
       padding-left: 81px;
-      .set-font-size(19px, 18px);
+      .set-font-size(19px, 24px);
 
       &::before {
         left: 0;
@@ -332,11 +323,17 @@
   overflow: hidden;
 }
 
-.form__input-checkbox:disabled + .form__label-checkbox {
+.form__input-radio:focus + .form__label--radio::before,
+.form__input-checkbox:focus + .form__label--checkbox::before {
+  outline: dashed 2px @gray-border-modal;
+  outline-offset: 2px;
+}
+
+.form__input-checkbox:disabled + .form__label--checkbox {
   opacity: 0.3;
 }
 
-.form__input-radio:disabled + .form__label-radio {
+.form__input-radio:disabled + .form__label--radio {
   opacity: 0.3;
 }
 
@@ -404,7 +401,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     @media (min-width: @tablet-width) {
       flex-direction: column;
@@ -548,7 +545,7 @@
   }
 
   &--email {
-    top: 33px;
+    top: 34px;
     right: 4px;
 
     @media (min-width: @tablet-width) {

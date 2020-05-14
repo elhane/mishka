@@ -13,18 +13,19 @@
     </script>
     <script src="js/picturefill.min.js" async=""></script>
   </head>
+
   <body>
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header page-header--index">
-      <nav class="main-nav main-nav--nojs">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo" href="#">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Мишка">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -55,7 +56,6 @@
             </a>
           </li>
         </ul>
-
         <ul class="main-nav__list main-nav__list--store-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Новые поступления</a>
@@ -70,7 +70,6 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Мишка — интернет-магазин милых штук ручной работы для дома</h1>
-
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="promo__title">Милые штуки ручной работы&nbsp;для дома</h2>
@@ -83,7 +82,6 @@
                 </svg>
               </a>
             </div>
-
             <div class="promo__category-item promo__category-item--toys">
               <a class="promo__category-link promo__category-link--toys" href="toys.html">
                 <h3 class="promo__category-title">Детские игрушки</h3>
@@ -118,7 +116,6 @@
                 <td class="week-product__table-cell">15 см</td>
               </tr>
             </table>
-
             <div class="week-product__link-image">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
@@ -131,7 +128,7 @@
               </picture>
             </div>
             <p class="week-product__price">Цена: 990 руб.</p>
-            <a class="week-product__button button modal-button" href="order.html">заказать</a>
+            <a class="week-product__button button modal-button" href="cart.html">заказать</a>
           </div>
         </div>
       </section>
@@ -243,7 +240,6 @@
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
-
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
@@ -267,7 +263,6 @@
             </a>
           </li>
         </ul>
-
         <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__logo" width="27" height="34" fill="#63d1bb">

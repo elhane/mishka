@@ -13,6 +13,7 @@
     </script>
     <script src="js/picturefill.min.js" async=""></script>
   </head>
+
   <body>
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
@@ -24,7 +25,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="логотип Мишка">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -55,7 +56,6 @@
             </a>
           </li>
         </ul>
-
         <ul class="main-nav__list main-nav__list--store-nav">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Новые поступления</a>
@@ -73,7 +73,6 @@
         <div class="order__header">
           <h1 class="order__title">Вязание на заказ</h1>
         </div>
-
         <div class="container">
           <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
@@ -97,7 +96,6 @@
             <fieldset class="form__fieldset form__fieldset--color">
               <div class="container form__content-wrapper form__content-wrapper--color">
                 <span class="form__legend form__legend--color form__legend--text">Цвет</span>
-
                 <div class="form__row form__row--color">
                   <input class="form__input-checkbox" type="checkbox" name="color-white" id="white" checked>
                   <label class="form__label form__label--checkbox" for="white" tabindex="0">Белый</label>
@@ -161,7 +159,7 @@
                   <label class="form__legend form__legend--contacts" for="customer-email">
                     <span class="form__legend form__legend--text form__legend--text-contacts">e-mail</span>
                   </label>
-                  <input class="form__input-field form__input-field--email" type="text" id="customer-email" name="customer-email" placeholder="Ваш Email*" required>
+                  <input class="form__input-field form__input-field--email" type="email" id="customer-email" name="customer-email" placeholder="Ваш Email*" required>
                   <svg class="form__input-icon form__input-icon--email" width="32" height="32">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
@@ -171,9 +169,9 @@
 
             <fieldset class="form__fieldset form__fieldset--commentary">
               <div class="container form__content-wrapper form__content-wrapper--commentary">
-                <div class="form__legend form__legend--commentary">
+                <label class="form__legend form__legend--commentary" for="comment">
                   <span class="form__legend-text">доп</span>
-                </div>
+                </label>
                 <div class="form__row form__row--commentary">
                   <textarea class="form__textarea" name="comment" id="comment" placeholder="Опишите все ваши пожелания к заказу" aria-label="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
@@ -195,7 +193,6 @@
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
-
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
@@ -219,7 +216,6 @@
             </a>
           </li>
         </ul>
-
         <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__logo" width="27" height="34" fill="#63d1bb">

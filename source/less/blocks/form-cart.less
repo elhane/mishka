@@ -24,6 +24,11 @@
   }
 }
 
+.form-cart__input:focus + .form-cart__label {
+  outline: dotted 2px @gray-border-modal;
+  outline-offset: 2px;
+}
+
 .form-cart__label {
   width: 82px;
   height: 52px;
@@ -46,7 +51,7 @@
   }
 
   &:focus {
-    outline-offset: 2px;
+    outline: none;
   }
 }
 

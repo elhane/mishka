@@ -46,6 +46,11 @@
     }
   }
 
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 2px;
+  }
+
   &:active {
     .social__link-icon {
       fill: @blue-secondary-hover;
@@ -55,11 +60,3 @@
   }
 }
 
-.copyright__logo {
-  margin-top: 3px;
-  transition: 0.3s;
-
-  @media (min-width: @desktop-width) {
-    margin-top: 5px;
-  }
-}

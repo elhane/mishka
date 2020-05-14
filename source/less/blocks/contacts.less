@@ -128,7 +128,6 @@
 .contacts__link {
   position: relative;
   margin-left: 4px;
-  // padding-bottom: 2px;
   color: @gray-primary;
   transition: 0.3s;
 
@@ -146,6 +145,11 @@
 
   &:hover {
     color: @blue-secondary-hover;
+  }
+
+  &:focus {
+    outline: dashed 2px @gray-border-modal;
+    outline-offset: 2px;
   }
 
   &:active {
