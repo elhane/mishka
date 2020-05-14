@@ -126,11 +126,10 @@
 }
 
 .reviews__autor-name {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: @black;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 4px;
     .set-font-size(18px, 24px);
   }
 
@@ -142,10 +141,7 @@
 .reviews__autor-link {
   color: @gray-primary;
   font-weight: 400;
-
-  @media (min-width: @tablet-width) {
-    .set-font-size(17px, 30px);
-  }
+  .set-font-size(17px, 30px);
 
   &:hover {
     color: @blue-secondary-hover;
@@ -167,7 +163,7 @@
   display: flex;
   flex-wrap: nowrap;
 
-  margin-top: 32px;
+  margin-top: 28px;
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
@@ -175,6 +171,7 @@
     margin: 0;
     bottom: 49px;
     right: 50px;
+    margin-top: 32px;
   }
 
   @media (min-width: @desktop-width) {
